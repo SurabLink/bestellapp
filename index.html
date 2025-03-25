@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>BestellApp</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- scripts -->
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+
+<body onload="init()">
+
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/icons/Logo.png">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="main_content">
+
+            <img class="title_img" src="./assets/img/pizza.jpeg">
+            <div class="emblem_container">
+                <img class="emblem_img" src="assets/icons/restaurant-emblem.jpeg">
+            </div>
+
+
+            <div class="container_content">
+                <h1>red eatery</h1>
+                <span class="star_rating"><img class="star_rating_svg" src="./assets/icons/star-fill.svg" alt="">4,2 von
+                    5</span>
+                <ul id="dish_categories_list_wrapper"></ul>
+
+                <div class="all_dishes">
+
+                    <div class="category_container">
+                        <h2 id="appetizers">Vorspeisen</h2>
+                        <img src="./assets/img/vorspeisen.jpg" alt="">
+                        <div id="appetizers_wrapper" class="dish_divs"></div>
+                    </div>
+
+                    <div class="category_container">
+                        <h2 id="pizza">Pizza</h2>
+                        <img src="./assets/img/pizzen.jpg" alt="">
+                        <div id="pizza_wrapper" class="dish_divs"></div>
+                    </div>
+
+                    <div class="category_container">
+                        <h2 id="pasta">Pasta</h2>
+                        <img src="./assets/img/pasta.jpg" alt="">
+                        <div id="pasta_wrapper" class="dish_divs"></div>
+                    </div>
+
+                    <div class="category_container">
+                        <h2 id="salads">Salate</h2>
+                        <img src="./assets/img/salate.jpg" alt="">
+                        <div id="salads_wrapper" class="dish_divs"></div>
+                    </div>
+
+                    <div class="category_container">
+                        <h2 id="desserts">Nachspeise</h2>
+                        <img src="./assets/img/nachspeise.jpg" alt="">
+                        <div id="desserts_wrapper" class="dish_divs"></div>
+                    </div>
+
+                    <div class="category_container">
+                        <h2 id="drinks">Getränke</h2>
+                        <img src="./assets/img/drinks.jpg" alt="">
+                        <div id="drinks_wrapper" class="dish_divs"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="basket_container">
+
+            <div class="basket">
+                <h2>Warenkorb</h2>
+
+                <div id="order_confirmation" class="d_none order_confirmation">
+                    <h2>Ihre Bestellung war erfolgreich! ✅</h2>
+                </div>
+
+                <div id="not_selected" class="not_selected">
+                    <img class="bag_svg" src="./assets/icons/bag-fill.svg" alt="">
+                    <p>Wähle leckere Speisen aus der Karte und bestell dein Essen.</p>
+                </div>
+
+                <div class="order_view">
+
+                    <div id="dish_to_basket_wrapper" class="dish_to_basket_wrapper"></div>
+                    <div id="invoice" class="gap_column d_none">
+
+                        <div class="price_summary gap_column">
+
+                            <div class="space_between">
+                                <span>Zwischensumme</span>
+                                <span id="subtotal"></span>
+                            </div>
+
+                            <div class="space_between">
+                                <span>Lieferkosten</span>
+                                <span>3,00 €</span>
+                            </div>
+                            <div class="result space_between">
+                                <span><b>Gesamt</b></span>
+                                <span><b id="total"></b></span>
+                            </div>
+
+
+                        </div>
+
+                        <button onclick="pay()" class="pay_btn">
+                            <h3>
+                                Bezahlen (<span id="total_btn"></span>)
+                            </h3>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <span>
+                © Surab Link
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

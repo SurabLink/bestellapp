@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Public Sans';
-    src: url('fonts/Public_Sans/PublicSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-  }
-  
+
 
 header {
     background-color: rgb(226, 103, 105);
@@ -70,14 +64,12 @@ ul {
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 2;
+    z-index: 1;
 }
 
 a {
     padding: 4px 12px;
     border-radius: 16px;
-
-    
 }
 
 a:hover {
@@ -86,10 +78,6 @@ a:hover {
 
 li {
     font-size: 18px;
-}
-
-.all_dishes {
-    /* margin-top: 60px; */
 }
 
 .all_dishes img {
@@ -119,7 +107,6 @@ h2 {
     background-color: rgba(226, 103, 105, 0.25);
     cursor: pointer;
 }
-
 
 .price {
     color: rgb(226, 103, 105);

@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+
+    ul {
+        gap: 16px !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    ul a b {
+        font-size: 16px;
+    }
+
+}

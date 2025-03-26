@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/basket.css">
     <link rel="stylesheet" href="./styles/standard.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 
 
     <!-- scripts -->
@@ -47,9 +47,12 @@
 
             <div class="container_content">
                 <h1>red eatery</h1>
-                <span class="star_rating"><img class="star_rating_svg" src="./assets/icons/star-fill.svg" alt="">4,2 von
-                    5</span>
-                <ul id="dish_categories_list_wrapper"></ul>
+                <span class="star_rating"><img class="star_rating_svg" src="./assets/icons/star-fill.svg" alt="">4,2 von 5</span>
+
+                <div class="ul_div">
+                    <ul id="dish_categories_list_wrapper"></ul>
+                    <div class="shadow"></div>
+                </div>
 
                 <div class="all_dishes">
 
@@ -97,6 +100,10 @@
         <aside class="basket_container">
 
             <div class="basket">
+
+                <div class="close_basket_btn">
+                    <img src="assets/icons/x_btn.svg" alt="">
+                </div>
                 <h2>Warenkorb</h2>
 
                 <div id="order_confirmation" class="d_none order_confirmation">

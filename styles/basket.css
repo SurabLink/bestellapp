@@ -50,15 +50,11 @@ aside h2 {
     align-items: center;
 }
 
-.amount_count {
-}
-
 .cart_single_price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-
 }
 
 .cart_entry_row {
@@ -90,14 +86,12 @@ aside h2 {
 
 .dish_to_basket_wrapper::-webkit-scrollbar-track {
     background: transparent;
-
 }
 
 .dish_to_basket_wrapper::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
 }
-
 
 .price_summary {
     margin-top: 32px;

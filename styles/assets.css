@@ -13,7 +13,6 @@
     top: -75px;
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
     border: 1px solid rgba(0, 0, 0, 0.116);
-
 }
 
 .star_rating_svg {
@@ -35,7 +34,6 @@
 .btn_minus:hover {
     cursor: pointer;
     color: rgba(226, 103, 105, 0.5);
-
 }
 
 .border_circle {
@@ -49,7 +47,6 @@
     align-items: center;
     cursor: pointer;
     background-color: white;
-
 }
 
 .border_circle:hover {
@@ -65,7 +62,6 @@
 
 .trash_svg {
     filter: brightness(0) saturate(100%) invert(37%) sepia(79%) saturate(545%) hue-rotate(330deg);
-
 }
 
 .trash_svg:hover {
@@ -84,8 +80,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
 }
 
 .pay_btn:hover {
@@ -111,8 +105,6 @@
     position: fixed;
     bottom: 3%;
     display: none;
-
-
 }
 
 .open_basket_btn_div {
@@ -124,15 +116,19 @@
 .open_basket_btn:hover {
     background-color: rgb(241, 138, 140);
     cursor: pointer;
-
-
 }
 
 .close_basket_btn {
     display: none;
 }
 
-.close_basket_btn:hover {
+.close_basket_svg {
+    width: auto;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.close_basket_svg:hover {
     cursor: pointer;
-    filter: invert(0.75);
+    background-color: rgba(0, 0, 0, 0.2);
 }

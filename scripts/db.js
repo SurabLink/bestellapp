@@ -1,5 +1,4 @@
 let menuDishes = {
-    // Vorspeisen
     "appetizers": [
         {
             "name": "Pizzabrot",
@@ -26,7 +25,6 @@ let menuDishes = {
             "amount": 0
         }
     ],
-    //Pizza
     "pizza": [
         {
             "name": "Pizza Margherita",
@@ -53,7 +51,6 @@ let menuDishes = {
             "amount": 0
         }
     ],
-    // Pasta
     "pasta": [
         {
             "name": "Pasta Napoli",
@@ -80,7 +77,6 @@ let menuDishes = {
             "amount": 0
         }
     ],
-    // Salate
     "salads": [
         {
             "name": "Hirtensalat",
@@ -107,7 +103,6 @@ let menuDishes = {
             "amount": 0
         }
     ],
-    // Nachspeise
     "desserts": [
         {
             "name": "Tiramisu",
@@ -134,7 +129,6 @@ let menuDishes = {
             "amount": 0
         }
     ],
-    // Getränke
     "drinks": [
         {
             "name": "Coca Cola 0,33l",

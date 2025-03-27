@@ -262,40 +262,19 @@ function getCartEntry(dishIndex, categoryKey, indexDishBasket) {
 }
 
 
+function openBasket() {
+    document.getElementById('basket_container').style.display = 'block';
+    document.getElementById('open_basket_btn').style.display = 'none';
+    document.getElementById('header').style.display = 'none';
+    document.getElementById('main_content').style.display = 'none';
+    document.getElementById('footer').style.display = 'none';
+}
 
+function closeBasket() {
+    document.getElementById('basket_container').style.display = 'none';
+    document.getElementById('open_basket_btn').style.display = 'block';
+    document.getElementById('header').style.display = 'flex';
+    document.getElementById('main_content').style.display = 'block';
+    document.getElementById('footer').style.display = 'flex';
 
-// function ARCHIVgetCartEntry(dishIndex, categoryKey) {
-//     return `
-//         <div class="cart_entry">
-//             <h3>${menuDishes[categoryKey][dishIndex].name}</h3>
-
-//             <div class="cart_entry_row row">
-//                 <div class="amount_control">
-//                     <span class="btn_minus">−</span>
-//                     <span class="amount_count"><b>${menuDishes[categoryKey][dishIndex].amount}</b></span>
-//                     <span class="btn_plus">+</span>
-//                 </div>
-
-//                 <div class="cart_single_price">
-//                     <span>
-//                         ${(menuDishes[categoryKey][dishIndex].amount*menuDishes[categoryKey][dishIndex].price).toFixed(2).replace(".", ",")} €
-//                     </span>
-//                     <img class="trash_svg" src="./assets/icons/trash.svg">
-//                 </div>
-
-//             </div>
-//             <span class="order_note">Anmerkung hinzufügen</span>
-
-//         </div>
-//     `
-// }
-
-// function ARCHIVaddDishToBasket(dishIndex, categoryKey) {
-//     let dishToBasketRef = document.getElementById('dish_to_basket_wrapper');
-//     dishToBasketRef.innerHTML = "";
-    
-//     if (menuDishes[categoryKey][dishIndex].amount == 0) {
-//         menuDishes[categoryKey][dishIndex].amount++;
-//         dishToBasketRef.innerHTML += getCartEntry(dishIndex, categoryKey);
-//     }
-// }
+}

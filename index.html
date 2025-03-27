@@ -28,7 +28,7 @@
 
 <body onload="init()">
 
-    <header>
+    <header id="header">
         <div class="container">
             <a href="index.html">
                 <img src="assets/icons/Logo.png">
@@ -37,7 +37,7 @@
     </header>
 
     <main>
-        <section class="main_content">
+        <section id="main_content" class="main_content">
 
             <img class="title_img" src="./assets/img/pizza.jpeg">
             <div class="emblem_container">
@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="open_basket_btn_div">
-                        <button class="open_basket_btn"><h2>zum Warenkorb</h2></button>
+                        <button id="open_basket_btn" onclick="openBasket()" class="open_basket_btn"><h2>zum Warenkorb</h2></button>
                     </div>
         
 
@@ -103,11 +103,11 @@
 
         </section>
 
-        <aside class="basket_container">
+        <aside id="basket_container" class="basket_container">
 
             <div class="basket">
 
-                <div class="close_basket_btn">
+                <div onclick="closeBasket()" class="close_basket_btn">
                     <img src="assets/icons/x_btn.svg" alt="">
                 </div>
                 <h2>Warenkorb</h2>
@@ -161,7 +161,7 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
         <div>
             <span>
                 © Surab Link

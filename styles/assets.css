@@ -100,3 +100,31 @@
     text-align: center;
     margin-top: 100px;
 }
+
+.open_basket_btn {
+    background-color: rgba(226, 103, 105, 1);
+    padding: 8px 0;
+    border-radius: 24px;
+    color: white;
+    border: none;
+    width: calc(100vw - 160px) !important;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 3%;
+
+
+}
+
+.open_basket_btn_div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.open_basket_btn:hover {
+    background-color: rgb(241, 138, 140);
+    cursor: pointer;
+
+
+}

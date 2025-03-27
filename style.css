@@ -21,6 +21,7 @@ main {
 
 .main_content {
     width: calc(100% - 300px);
+    padding-bottom: 50px;
 }
 
 .title_img {

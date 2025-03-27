@@ -1,17 +1,14 @@
 .close_basket_btn {
-    display: flex;
-    justify-content: right;
-    filter: brightness(0) invert(1);
-    margin-bottom: 16px;
-
+    display: none;
 }
 
 .close_basket_btn:hover {
     cursor: pointer;
     filter: invert(0.75);
+}
 
-
-
+.open_basket_btn {
+    /* display: none; */
 }
 
 
@@ -38,10 +35,25 @@
         display: none !important;
     }
 
+    .basket_container {
+
+        width: auto;
+        min-height: 100vh;
+    }
+
+    .not_selected p {
+        text-align: center;
+    }
+
     .close_basket_btn {
-        /* display: block; */
         display: flex;
         justify-content: right;
+        filter: brightness(0) invert(1);
+        margin-bottom: 16px;
+    }
+
+    .open_basket_btn {
+        display: flex;
     }
 
     .main_content {

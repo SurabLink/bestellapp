@@ -1,3 +1,12 @@
+@media(min-width: 1000px) {
+    .basket_container {
+        display: flex !important;
+    }
+
+    .open_basket_btn {
+        display: none !important;
+    }
+}
 
 @media (max-width: 1200px) {
 
